@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo de Branches no Git</title>
 </head>
 <body>
-     <main>
-            <header>
-                <h1>Breach Master</h1>
-            </header>
-            <article>
-                <h2>Commitar na branch master</h2>
-                <p>pratica não recomendada. porque?</p>
-            </article>
-            <article>
-                <h2>Como utilizar branch</h2>
-                <p>como?</p>
-            </article>
-     </main>
+    <main>
+        <header>
+            <h1>Branch Master/Main</h1>
+            <p>Guia de boas práticas no uso de branches no Git com GitHub Desktop</p>
+        </header>
+
+        <article>
+            <h2>Commitar na branch master/main</h2>
+            <p>
+                Antigamente, a branch principal do Git era chamada <strong>master</strong>, mas hoje em dia
+                a maioria dos repositórios usa <strong>main</strong>.  
+            </p>
+            <p>
+                Fazer commits diretamente nessa branch <strong>não é recomendado</strong>, porque:
+            </p>
+            <ul>
+                <li>A branch principal deve sempre estar estável e livre de erros.</li>
+                <li>Se ocorrer um bug, ele afeta todo o projeto imediatamente.</li>
+                <li>Dificulta a colaboração, pois mistura códigos em desenvolvimento com código já validado.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Como utilizar branches corretamente</h2>
+            <p>
+                Branches são ramificações independentes do código, permitindo que você
+                trabalhe em novas funcionalidades sem impactar a versão estável do projeto.
+            </p>
+            <h3>Passos básicos no terminal (CLI):</h3>
+            <ol>
+                <li>Criar uma branch: <code>git checkout -b nome-da-branch</code></li>
+                <li>Fazer alterações e commits nessa branch.</li>
+                <li>Enviar para o repositório remoto: <code>git push origin nome-da-branch</code></li>
+                <li>Quando finalizado, abrir um Pull Request para unir com a branch principal.</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Usando o GitHub Desktop</h2>
+            <p>O <strong>GitHub Desktop</strong> facilita a criação e o gerenciamento de branches sem precisar usar o terminal.</p>
+            
+            <h3>Criar uma nova branch</h3>
+            <ol>
+                <li>No canto superior da janela, clique no menu de branches.</li>
+                <li>Digite o nome da nova branch (ex: <code>feature-login</code>).</li>
+                <li>Selecione a opção <em>Create new branch</em>.</li>
+                <li>A branch será criada e automaticamente selecionada.</li>
+            </ol>
+
+            <h3>Fazer commits na branch</h3>
+            <ol>
+                <li>Edite seus arquivos no editor de código (VS Code, IntelliJ etc.).</li>
+                <li>No GitHub Desktop, os arquivos modificados aparecerão listados.</li>
+                <li>Adicione uma mensagem de commit clara (ex: <em>"Adiciona página de login"</em>).</li>
+                <li>Clique em <strong>Commit to nome-da-branch</strong>.</li>
+            </ol>
+
+            <h3>Enviar a branch para o GitHub</h3>
+            <ol>
+                <li>No topo da tela, clique em <em>Publish branch</em> para enviar ao repositório remoto.</li>
+                <li>No site do GitHub, abra um <strong>Pull Request</strong> para mesclar com a branch <code>main</code>.</li>
+            </ol>
+
+            <h3>Mudar entre branches</h3>
+            <p>Para alternar, basta abrir o seletor de branches no GitHub Desktop e escolher a branch desejada.</p>
+        </article>
+
+        <article>
+            <h2>Estratégias comuns de branches</h2>
+            <ul>
+                <li><strong>Feature Branch:</strong> criar uma branch para cada nova funcionalidade.</li>
+                <li><strong>Hotfix Branch:</strong> usada para corrigir rapidamente erros críticos na produção.</li>
+                <li><strong>Release Branch:</strong> utilizada para preparar versões estáveis do sistema.</li>
+                <li><strong>Git Flow:</strong> modelo mais estruturado que define papéis claros para cada branch.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Boas práticas</h2>
+            <ul>
+                <li>Sempre dê nomes claros às branches (ex: <code>feature/login</code> ou <code>hotfix/corrige-bug</code>).</li>
+                <li>Evite commits muito grandes — faça commits pequenos e descritivos.</li>
+                <li>Sincronize com frequência sua branch com a principal para evitar conflitos.</li>
+                <li>Use Pull Requests para revisão de código e colaboração em equipe.</li>
+            </ul>
+        </article>
+
+        <footer>
+            <p>📘 Estudo prático sobre Git & Branches com GitHub Desktop — Erick Ferreira Aleixo</p>
+        </footer>
+    </main>
 </body>
 </html>
