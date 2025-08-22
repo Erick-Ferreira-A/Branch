@@ -1,2 +1,6 @@
-# Branch
-Utilizando branch secundarias para fazer commits. Aprendendo boas práticas para não commitar direto da branch master.
+# <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Logo Git" width="50"/> Branches no Git
+
+Aprendendo a utilizar **branches secundárias** para organizar melhor os commits e evitar trabalhar diretamente na `master/main`.  
+
+---
+
