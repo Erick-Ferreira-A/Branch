@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo geral */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #1f2937; /* tom escuro elegante */
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #d1d5db;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Artigos */
+article {
+    background: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1f2937;
+    border-left: 6px solid #3b82f6; /* destaque azul */
+    padding-left: 10px;
+}
+
+article h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+article p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Listas */
+ul, ol {
+    margin: 10px 0 15px 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 6px;
+}
+
+/* Código */
+code {
+    background: #e5e7eb;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-family: "Courier New", Courier, monospace;
+    color: #111827;
+    font-size: 0.95rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
